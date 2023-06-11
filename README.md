@@ -1,3 +1,3 @@
 # mulprec-pi-go
 
-Calculate big digits of pi with own made mulprec package build with Go.
+Go の自作パッケージ "mulprec" による膨大な桁数の円周率の計算
