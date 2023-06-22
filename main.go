@@ -7,14 +7,28 @@ import (
 )
 
 func main() {
+
 	fmt.Println("Hello, playground")
-	var a mulprec.NUMBER
+	var a, b mulprec.NUMBER
 	a.N = []mulprec.NUMBER_TYPE{1, 2, 3}
+	b.N = []mulprec.NUMBER_TYPE{4, 5, 7}
 	fmt.Println(a)
-	a.Set(-4, 9)
+	fmt.Println(b)
+	fmt.Println()
+
+	fmt.Println(a, "+", b)
+	a.Add(&b)
 	fmt.Println(a)
-	a.Set(0, 9)
+	fmt.Println()
+
+	fmt.Println(a, "-", b)
+	a.Sub(&b)
 	fmt.Println(a)
-	a.Set(5, 9)
+	fmt.Println()
+
+	fmt.Println(a, "*", b)
+	a.Mul(&b)
 	fmt.Println(a)
+	fmt.Println()
+
 }
