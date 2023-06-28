@@ -93,7 +93,7 @@ func (a *NUMBER) FixDigits() {
 				panic("This NUMBER is corrupted.")
 			}
 			a.Set(pos+1, a.GetDigit(pos+1)+NUMBER_TYPE(math.Floor(float64(v)/NUMBER_TYPE_MAX)))
-			a.Set(pos, NUMBER_TYPE_MAX-(v%NUMBER_TYPE_MAX))
+			a.Set(pos, NUMBER_TYPE_MAX+v)
 		}
 	}
 
